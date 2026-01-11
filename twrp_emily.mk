@@ -12,23 +12,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common recovery stuff
+$(call inherit-product, vendor/*/config/common.mk)
 
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-PRODUCT_COPY_FILES += \
-    device/huawei/emily/dummykernel:kernel
-
 PRODUCT_NAME := twrp_emily
 PRODUCT_DEVICE := emily
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := Mate 10
+PRODUCT_MODEL := P20
 PRODUCT_MANUFACTURER := Huawei
