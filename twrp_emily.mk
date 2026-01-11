@@ -25,10 +25,10 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/huawei/alp/dummykernel:kernel
+    device/huawei/emily/dummykernel:kernel
 
-PRODUCT_NAME := twrp_alp
-PRODUCT_DEVICE := alp
+PRODUCT_NAME := twrp_emily
+PRODUCT_DEVICE := emily
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Mate 10
 PRODUCT_MANUFACTURER := Huawei

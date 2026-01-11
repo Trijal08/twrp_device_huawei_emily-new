@@ -1,4 +1,4 @@
-DEVICE_PATH := device/huawei/alp
+DEVICE_PATH := device/huawei/emily
 ALLOW_MISSING_DEPENDENCIES := true
 # Don't forget to set this to true or compilation will fail on VTS.
 # VTS seems to be unused in TWRP anyway.
@@ -37,11 +37,11 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := dummykernel
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/alp/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/emily/custombootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x8000 --ramdisk_offset 0x01000000 --tags_offset 0x0100
 
 # Use a dummy kernel since its going to be flashed to the recovery_ramdisk anyway and will have no use.
-TARGET_PREBUILT_KERNEL := device/huawei/alp/dummykernel
+TARGET_PREBUILT_KERNEL := device/huawei/emily/dummykernel
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
@@ -65,7 +65,7 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/alp/sepolicy
+    device/huawei/emily/sepolicy
 
 # TWRP Flags
 TW_THEME := portrait_hdpi
@@ -82,4 +82,4 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 # Device crashes if /sbin/modprobe is present so this is needed:
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/alp/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/emily/custombootimg.mk

@@ -1,4 +1,4 @@
-# twrp_device_huawei_alp
+# twrp_device_huawei_emily
  TWRP Device tree for Huawei Mate 10 on EMUI 9.1
  This Device tree is based on the P20 Pro which shares similar specs with the Mate 10.
  
